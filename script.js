@@ -125,13 +125,20 @@ let tiempo = new Date();
 let limite= new Date ("9/3/2023")
 
 function restar (){
+    let parrafo_dia= document.getElementById("dias");
     // Calcular la diferencia en milisegundos
     const diferenciaEnMilisegundos = limite - tiempo;
   
     // Calcular la diferencia en días dividiendo los milisegundos entre (1000 ms/s * 60 s/min * 60 min/h * 24 h/día)
     const diferenciaEnDias = diferenciaEnMilisegundos / (1000 * 60 * 60 * 24);
   const redondeo= Math.round(diferenciaEnDias)
-    return redondeo;
+    
+  let texto= document.createTextNode("Quedan " + redondeo + " dias para el siguiente corte")
+  parrafo_dia.appendChild(texto)
   }
+
+  restar();
+
   
+
 })
