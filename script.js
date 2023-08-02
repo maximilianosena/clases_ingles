@@ -70,8 +70,7 @@ for (let i=0; i<clases_Teoricas.length; i++){
     document.getElementById("cdad").appendChild(text);
 
 
-    let valor_teo1= document.getElementById("val_teo1").innerHTML;
-let valor_pre1= document.getElementById("val_pre1").innerHTML;
+
 
 
 
