@@ -15,7 +15,7 @@ let clases_Presenciales=[
 ]
 
 
-let clases_Teoricas=["Semana 1", "Semana 1", "Semana 2", "Semana 3", "Semana 4", "Semana 5"]
+let clases_Teoricas=["Semana 1", "Semana 1", "Semana 2", "Semana 3", "Semana 4", "Semana 5","Semana 6"]
 
 for (let i=0; i<clases_Presenciales.length; i++)
 {
