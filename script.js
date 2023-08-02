@@ -121,24 +121,47 @@ document.addEventListener("DOMContentLoaded", function () {
 
     //fecha actual en dia/mes/año
     let tiempo = new Date();
-
+ 
+    console.log(tiempo)
     //fecha limite en dia/mes/año
-    let limite = new Date("9/3/2023")
+    let limite = new Date("9/3/2023 23:59:59")
 
     function restar() {
         let parrafo_dia = document.getElementById("dias");
         // Calcular la diferencia en milisegundos
         const diferenciaEnMilisegundos = limite - tiempo;
 
-        // Calcular la diferencia en días dividiendo los milisegundos entre (1000 ms/s * 60 s/min * 60 min/h * 24 h/día)
-        const diferenciaEnDias = diferenciaEnMilisegundos / (1000 * 60 * 60 * 24);
-        const redondeo = Math.round(diferenciaEnDias)
+         // Calcular los días, horas, minutos y segundos restantes
 
-        let texto = document.createTextNode("Quedan " + redondeo + " dias para el siguiente corte")
-        parrafo_dia.appendChild(texto)
+         //1000 milisegundos= 1segundo, 60segundos=1min, 60min=1hr, 24hrs=1d
+    const diasRestantes = Math.floor(diferenciaEnMilisegundos / (1000 * 60 * 60 * 24));
+
+    //con % toma los decimales
+    //(1000 * 60 * 60 * 24)) = total de milisegundos en un dia
+    //diferenciaEnMilisegundos % (1000 * 60 * 60 * 24))=calcula el residuo por cdad milisegundos en un dia
+    //((diferenciaEnMilisegundos % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))= la segunda división calcula
+    //cuantas horas son esos milisegundos
+    const horasRestantes = Math.floor((diferenciaEnMilisegundos % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+
+    //diferenciaEnMilisegundos % (1000 * 60 * 60) calcula el residuo por cdad milisegundos en una hora
+    //((diferenciaEnMilisegundos % (1000 * 60 * 60)) / (1000 * 60))= la segunda division calcula cuantos minutos
+    //son esos milisegundos
+    const minutosRestantes = Math.floor((diferenciaEnMilisegundos % (1000 * 60 * 60)) / (1000 * 60));
+
+    //(diferenciaEnMilisegundos % (1000 * 60)) calcula el residuo por cdad milisegundos en un minuto
+    //((diferenciaEnMilisegundos % (1000 * 60)) / 1000) calcula cuantos segundos son esos milisegundos
+    const segundosRestantes = Math.floor((diferenciaEnMilisegundos % (1000 * 60)) / 1000);
+        
+
+    
+    const texto = `Quedan ${diasRestantes} días, ${horasRestantes} horas, ${minutosRestantes} minutos y ${segundosRestantes} segundos para el siguiente corte`;
+
+    parrafo_dia.textContent = texto;
     }
 
     restar();
 
+    // Llamar a la función cada segundo para mantener la cuenta regresiva actualizada
+setInterval(restar,1000);
 
 })
