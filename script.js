@@ -83,40 +83,33 @@ document.addEventListener("DOMContentLoaded", function () {
     for (let i = 0; i < obligacion.length; i++) {
         let salto = document.createElement("br")
         if (numeros >= obligacion[i].numero) {
-            let text = document.createTextNode(" Clases teoricas suficientes para el corte del " + obligacion[i].corte);
+            console.log (" Clases teoricas suficientes para el corte del " + obligacion[i].corte);
 
-            document.getElementById("aprob_teo").appendChild(text);
 
         } else {
             let text = document.createTextNode(" Faltan " + (obligacion[i].numero - numeros) + " clases teoricas para el corte del " + obligacion[i].corte);
 
             document.getElementById("aprob_teo").appendChild(text);
+            document.getElementById("aprob_teo").appendChild(salto)
         }
-        // Agregar un salto de línea después de cada resultado (excepto el último)
-        if (i < obligacion.length - 1) {
-            document.getElementById("aprob_teo").appendChild(salto);
 
-        }
     }
 
 
     for (let i = 0; i < obligacion.length; i++) {
         let salto = document.createElement("br")
         if (number >= obligacion[i].numero) {
-            let text = document.createTextNode(" Clases presenciales suficientes para el corte del " + obligacion[i].corte)
+            console.log (" Clases presenciales suficientes para el corte del " + obligacion[i].corte)
 
-            document.getElementById("aprob_pre").appendChild(text);
+            
 
         } else {
             let text = document.createTextNode(" Faltan " + (obligacion[i].numero - number) + " clases presenciales para el corte del " + obligacion[i].corte)
 
             document.getElementById("aprob_pre").appendChild(text);
-        }
-        // Agregar un salto de línea después de cada resultado (excepto el último)
-        if (i < obligacion.length - 1) {
             document.getElementById("aprob_pre").appendChild(salto);
-
         }
+        
     }
 
     //fecha actual en dia/mes/año
