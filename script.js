@@ -22,7 +22,12 @@ document.addEventListener("DOMContentLoaded", function () {
         },
         { dia: "11 agosto",
         semana: 7,
-        nombre: "Kiet H"}
+        nombre: "Kiet H"},
+        {
+            dia: "22 agosto",
+            semana: 9,
+            nombre: "Monica G"
+        }
     ]
 
 
