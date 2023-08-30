@@ -2,8 +2,8 @@
  let tiempo = new Date();
  
  console.log(tiempo)
- //fecha limite en dia/mes/año
- let limite = new Date("9/3/2023 23:59:59")
+ //fecha limite en mes/dia/año
+ let limite = new Date("10/1/2023 23:59:59")
 
  
 // Calcular la diferencia en milisegundos
