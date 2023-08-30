@@ -27,6 +27,11 @@ document.addEventListener("DOMContentLoaded", function () {
             dia: "22 agosto",
             semana: 9,
             nombre: "Monica G"
+        },
+         {
+            dia: "29 agosto",
+            semana: 10,
+            nombre: "Tyson F"
         }
     ]
 
