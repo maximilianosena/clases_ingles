@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
     ]
 
 
-    let clases_Teoricas = ["Semana 1", "Semana 1", "Semana 2", "Semana 3", "Semana 4", "Semana 5", "Semana 6", "Semana 8", "Semana 11", "Semana 12"]
+    let clases_Teoricas = ["Semana 1", "Semana 1", "Semana 2", "Semana 3", "Semana 4", "Semana 5", "Semana 6", "Semana 8", "Semana 11", "Semana 12", "Semana 12"]
 
     for (let i = 0; i < clases_Presenciales.length; i++) {
 
