@@ -51,7 +51,8 @@ document.addEventListener("DOMContentLoaded", function () {
     ]
 
 
-    let clases_Teoricas = ["Semana 1", "Semana 1", "Semana 2", "Semana 3", "Semana 4", "Semana 5", "Semana 6", "Semana 8", "Semana 11", "Semana 12", "Semana 12"]
+    let clases_Teoricas = ["Semana 1", "Semana 1", "Semana 2", "Semana 3", "Semana 4", 
+    "Semana 5", "Semana 6", "Semana 8", "Semana 11", "Semana 12", "Semana 12", "Semana 12"]
 
     for (let i = 0; i < clases_Presenciales.length; i++) {
 
@@ -110,7 +111,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
     //Clases presenciales hechas y requisito
-    let obligacion = [{ numero: 3, corte: "30 de julio" }, { numero: 7, corte: "3 de setiembre" }, { numero: 11, corte: "1° de octubre"}]
+    let obligacion = [{ numero: 3, corte: "30 de julio" }, { numero: 7, corte: "3 de setiembre" }, { numero: 14, corte: "29 de octubre"}]
 
     //
     for (let i = 0; i < obligacion.length; i++) {
