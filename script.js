@@ -47,12 +47,17 @@ document.addEventListener("DOMContentLoaded", function () {
             dia: "14 setiembre",
             semana: 12,
             nombre: "Bianca W"
+        },
+         {
+            dia: "21 setiembre",
+            semana: Vacaciones,
+            nombre: "Dumoluhle Cn/Ntumeleng L."
         }
     ]
 
 
     let clases_Teoricas = ["Semana 1", "Semana 1", "Semana 2", "Semana 3", "Semana 4", 
-    "Semana 5", "Semana 6", "Semana 8", "Semana 11", "Semana 12", "Semana 12", "Semana 12"]
+    "Semana 5", "Semana 6", "Semana 8", "Semana 11", "Semana 12", "Semana 12", "Vacaciones","Vacaciones"]
 
     for (let i = 0; i < clases_Presenciales.length; i++) {
 
