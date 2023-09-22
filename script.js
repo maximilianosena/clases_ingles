@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function () {
         },
          {
             dia: "21 setiembre",
-            semana: Vacaciones,
+            semana: "Vacaciones",
             nombre: "Dumoluhle Cn/Ntumeleng L."
         }
     ]
