@@ -131,7 +131,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
     //Clases presenciales hechas y requisito
-    let obligacion = [{ numero: 3, corte: "30 de julio" }, { numero: 7, corte: "3 de setiembre" }, { numero: 14, corte: "29 de octubre"}]
+    let obligacion = [{ numero: 3, corte: "30 de julio" }, { numero: 7, corte: "3 de setiembre" }, { numero: 14, corte: "29 de octubre"}, { numero: 18, corte: "29 de noviembre" }]
 
     //
     for (let i = 0; i < obligacion.length; i++) {
