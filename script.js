@@ -82,13 +82,18 @@ document.addEventListener("DOMContentLoaded", function () {
             dia: "19 noviembre",
             semana: 20,
             nombre: "Nate C."
+        }, 
+        {
+            dia: "20 noviembre",
+            semana: 21,
+            nombre: "Noelle Jess."
         }
         
     ]
 
 
     let clases_Teoricas = ["Semana 1", "Semana 1", "Semana 2", "Semana 3", "Semana 4", 
-    "Semana 5", "Semana 6", "Semana 8", "Semana 11", "Semana 12", "Semana 12", "Vacaciones","Vacaciones", "Semana 16", "Semana 16","Semana 19","Semana 19","Semana 20","Semana 20"]
+    "Semana 5", "Semana 6", "Semana 8", "Semana 11", "Semana 12", "Semana 12", "Vacaciones","Vacaciones", "Semana 16", "Semana 16","Semana 19","Semana 19","Semana 20","Semana 20","Semana 21"]
 
     for (let i = 0; i < clases_Presenciales.length; i++) {
 
